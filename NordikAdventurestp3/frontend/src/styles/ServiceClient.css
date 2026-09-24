@@ -1,0 +1,115 @@
+.sc-page{
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sc-subtitle{
+  color:#444;
+  margin-bottom: 20px;
+}
+
+.sc-error{ color:#b91c1c; }
+
+.sc-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px){
+  .sc-grid{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.sc-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.sc-select{
+  width:100%;
+  padding: 10px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.sc-client-info p{
+  margin: 6px 0;
+}
+
+.sc-form{
+  border:1px dashed #d1d5db;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.sc-row{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.sc-row label{
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.sc-row select,
+.sc-row textarea,
+.sc-row input{
+  padding: 10px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+}
+
+.sc-row textarea{
+  min-height: 80px;
+  resize: vertical;
+}
+
+.sc-btn{
+  background:#00694c;
+  border:none;
+  color:white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.sc-btn:hover{
+  opacity:0.92;
+}
+
+.sc-table-wrap{
+  overflow-x:auto;
+}
+
+.sc-table{
+  width:100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.sc-table th,
+.sc-table td{
+  border:1px solid #e5e7eb;
+  padding: 8px 10px;
+  text-align:left;
+}
+
+.sc-table th{
+  background:#f9fafb;
+  font-weight: 700;
+}
+
+.sc-table tbody tr:nth-child(even){
+  background:#f3f4f6;
+}

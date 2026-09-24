@@ -1,0 +1,160 @@
+/* ====== Layout global : 2 colonnes ====== */
+.commande-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Desktop : 2 colonnes (catalogue + panier) */
+@media (min-width: 992px) {
+  .commande-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* ====== Catalogue ====== */
+.commande-catalogue h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.commande-catalogue p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Tableau produits */
+.commande-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.commande-table th,
+.commande-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.commande-table th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.commande-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Input quantité */
+.commande-table input[type="number"] {
+  width: 70px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Bouton "Ajouter au panier" */
+.commande-table button {
+  background: #0a7b56;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.commande-table button:hover {
+  background: #085c40;
+}
+
+/* ====== Panier ====== */
+.commande-panier {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.commande-panier h2 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+/* Liste du panier */
+.panier-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.panier-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.panier-item:last-child {
+  border-bottom: none;
+}
+
+.panier-item button {
+  background: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.panier-item button:hover {
+  background: #b52b27;
+}
+
+/* ====== Résumé des montants ====== */
+.panier-resume {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.panier-resume div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.panier-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* ====== Bouton valider ====== */
+.btn-valider {
+  width: 100%;
+  background: #0a7b56;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-valider:hover {
+  background: #085c40;
+}

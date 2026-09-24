@@ -1,0 +1,106 @@
+
+.financier-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.financier-page h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.financier-intro {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 26px;
+}
+
+
+
+.error-text {
+  color: #b91c1c;
+  margin-top: 12px;
+}
+
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+.dash-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Titre KPI */
+.dash-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00694c;
+}
+
+/* Valeur KPI */
+.dash-value {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Libellé KPI */
+.dash-label {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+
+.dash-card.kpi-alert {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+
+.dash-status-list {
+  padding-left: 18px;
+  margin: 6px 0 0 0;
+  font-size: 0.95rem;
+}
+
+.dash-status-list li {
+  margin: 6px 0;
+}
+
+
+
+@media (max-width: 600px) {
+  .financier-page h1 {
+    font-size: 2rem;
+  }
+
+  .dash-value {
+    font-size: 1.6rem;
+  }
+}

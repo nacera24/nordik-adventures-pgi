@@ -1,0 +1,14 @@
+.reappro-page { padding: 24px; }
+.reappro-header { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.reappro-alert { margin:12px 0; padding:10px; border:1px solid #f2b8b5; background:#fff0f0; }
+.reappro-table-wrap { overflow:auto; border:1px solid #eee; border-radius:10px; }
+.reappro-table { width:100%; border-collapse:collapse; }
+.reappro-table th, .reappro-table td { padding:12px; border-bottom:1px solid #eee; text-align:left; }
+.reappro-prod { display:flex; gap:10px; align-items:center; }
+.reappro-img { width:44px; height:44px; object-fit:cover; border-radius:8px; }
+.reappro-img.placeholder { background:#f3f3f3; }
+.reappro-name { font-weight:600; }
+.reappro-sku { font-size:12px; opacity:.7; }
+.reappro-btn { padding:10px 14px; border-radius:10px; border:1px solid #ddd; background:#fff; cursor:pointer; }
+.reappro-btn.small { padding:8px 10px; }
+.danger { font-weight:700; color:#b00020; }

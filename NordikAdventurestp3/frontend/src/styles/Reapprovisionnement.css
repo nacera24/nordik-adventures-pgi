@@ -1,0 +1,60 @@
+.reappro-page {
+  padding: 24px;
+}
+
+.reappro-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.reappro-loading {
+  color: #555;
+}
+
+.reappro-error {
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f2b8b5;
+  background: #fff0f0;
+  color: #b00020;
+}
+
+.reappro-empty {
+  padding: 12px;
+  background: #f5f7f9;
+  border-radius: 8px;
+  color: #333;
+}
+
+/* Table */
+.reappro-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.reappro-table th,
+.reappro-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.reappro-table th {
+  background: #f3f6f8;
+  text-align: left;
+  font-weight: 600;
+}
+
+.reappro-table td {
+  vertical-align: middle;
+}
+
+.reappro-stock-danger {
+  font-weight: 700;
+  color: #b00020;
+}

@@ -1,0 +1,83 @@
+/* Arrière-plan général du catalogue */
+.catalogue-page {
+  background: linear-gradient(135deg, #f5f7fb 0%, #eef3ff 40%, #fefefe 100%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 16px;
+}
+
+/* Titre */
+.catalogue-title {
+  font-weight: 700;
+  text-align: center;
+  color: #1f2a44;
+  letter-spacing: 0.03em;
+}
+
+/* Carte produit */
+.catalogue-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.15);
+}
+
+/* Image */
+.catalogue-img-wrapper {
+  background: #f4f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+}
+
+.catalogue-img-wrapper img {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+/* Titre produit */
+.catalogue-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  min-height: 2.6em; /* pour stabiliser la hauteur des cartes */
+}
+
+/* Prix */
+.catalogue-card-price {
+  color: #0f766e;
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Bouton */
+.catalogue-btn {
+  border-radius: 999px;
+  padding: 0.45rem 1.5rem;
+  font-weight: 500;
+  background: #2563eb;
+  border: none;
+}
+
+.catalogue-btn:hover {
+  background: #1d4ed8;
+}
+.catalogue-filter-label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.catalogue-select {
+  min-width: 240px;
+}
+
+.catalogue-filter-btn {
+  white-space: nowrap;
+}

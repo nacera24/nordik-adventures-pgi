@@ -1,0 +1,82 @@
+
+.home-hero {
+  width: 100%;
+  height: 600px; 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* VOILE */
+.home-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 40, 30, 0.55); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+/* TEXTE */
+.home-content {
+  text-align: center;
+  max-width: 800px;
+  color: white;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2.2rem;
+  color: #e5e7eb;
+}
+
+/* BOUTONS */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Bouton client */
+.btn-client {
+  background: white;
+  color: #064e3b;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-client:hover {
+  background: #e2e8f0;
+}
+
+/* Bouton employé */
+.btn-employe {
+  background: #22c55e;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-employe:hover {
+  background: #16a34a;
+}

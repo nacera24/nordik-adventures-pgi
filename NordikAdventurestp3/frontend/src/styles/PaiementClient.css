@@ -1,0 +1,247 @@
+.paiement-page {
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  /* ✅ laisse de la place pour la barre fixed en bas */
+  padding-bottom: 200px;
+}
+
+.btn-retour-panier {
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0 18px;
+}
+
+.paiement-alert {
+  margin: 10px 0 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+}
+
+.paiement-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .paiement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.paiement-card {
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff;
+}
+
+.paiement-card h2 {
+  margin: 0 0 14px;
+}
+
+.recap-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.recap-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.recap-name {
+  font-weight: 700;
+}
+
+.recap-meta {
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+.recap-right {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.totaux {
+  border-top: 1px solid #f1f1f1;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.totaux-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totaux-line.total strong {
+  font-size: 1.1rem;
+}
+
+.paiement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paiement-input {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.paiement-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-payer {
+  margin-top: 6px;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.paiement-note {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   ✅ SATISFACTION BAR (2 LIGNES)
+   =========================== */
+
+.sat-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 12px 16px;
+}
+
+/* contenu centré comme la page */
+.sat-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sat-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.sat-top {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sat-text {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sat-stars {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.sat-star {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+  line-height: 1;
+  color: #d6d6d6;
+  padding: 0;
+}
+
+.sat-star.selected {
+  color: #f5c518;
+}
+
+.sat-bottom {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* input indépendant (NE PAS utiliser paiement-input ici) */
+.sat-input {
+  box-sizing: border-box;
+  width: min(520px, 85vw);
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.sat-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.sat-btn {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sat-btn.primary {
+  background: #111;
+  color: #fff;
+}
+
+.sat-btn.secondary {
+  background: #f2f2f2;
+  color: #111;
+}
+
+@media (max-width: 600px) {
+  .sat-star {
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+  }
+}

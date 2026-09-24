@@ -1,0 +1,105 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #064e3b, #059669);
+  padding: 0.5rem 1.5rem;  
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: 60px;
+  width: auto;      
+  border-radius: 8px; 
+  object-fit: contain;
+  border: none;
+  padding: 0;
+}
+
+
+/* Liens */
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;    
+  transition: all 0.2s ease;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255,255,255,0.18);
+}
+
+.navbar-links .active a {
+  background-color: rgba(255,255,255,0.24);
+  font-weight: 600;
+}
+
+.navbar-links a svg {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+/* Bouton de déconnexion */
+.logout-btn {
+  background-color: #ffffff;
+  color: #064e3b;
+  border: none;
+  padding: 0.4rem 1rem;
+  margin-left: 1rem;
+  border-radius: 999px;       
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: translateY(-1px);
+}
+
+/* Sur mobile, on évite que le bouton colle trop au bord */
+@media (max-width: 768px) {
+  .logout-btn {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+}

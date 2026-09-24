@@ -1,0 +1,257 @@
+
+/* Page Layout */
+
+
+.page-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+/* Buttons */
+
+
+.btn-primary {
+  background-color: #059669;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #047857;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #111827;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.btn-small {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-right: 0.3rem;
+}
+
+.btn-edit {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+
+/* Tableau produits */
+
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 10px;
+}
+
+.products-table th,
+.products-table td {
+  padding: 0.75rem 0.8rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.products-table th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.product-thumb {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+/* Formulaire produits */
+
+
+.product-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.product-form h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+/* Fiche produit détaillée */
+
+
+.product-details-card {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.product-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.info-section p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.info-section strong {
+  color: #064e3b;
+}
+
+
+.error-text {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+.success-text {
+  color: #047857;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .product-details-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+/* ===== Upload image ===== */
+
+.file-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: fit-content;
+  transition: 0.2s;
+}
+
+.file-upload-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.image-preview {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.image-preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+

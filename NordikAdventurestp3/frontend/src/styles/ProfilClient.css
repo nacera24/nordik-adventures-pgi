@@ -1,0 +1,69 @@
+/* --- Conteneur général de la page --- */
+.client-profile {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation légère d’apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Titre --- */
+.client-profile h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #003366; 
+}
+
+/* --- Carte contenant les infos --- */
+.profile-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #1e90ff; 
+}
+
+/* --- Ligne de profil  --- */
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Retirer la ligne sur la dernière */
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+/* Label */
+.label {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Valeur affichée */
+.value {
+  font-weight: 500;
+  color: #222;
+}
+
+/* --- Message d’erreur --- */
+.error-message {
+  color: #b10000;
+  background: #ffe5e5;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-align: center;
+  border-left: 4px solid #ff4d4d;
+  margin-top: 20px;
+}
